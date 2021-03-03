@@ -10,7 +10,7 @@ Para poder habilitar el protocolo HTTPS en un sitio web es necesario obtener un 
 ### 1.1.2 ¿Qué es Let’s Encrypt?
 Let’s Encrypt es una autoridad de certificación que se puso en marcha el 12 de abril de 2016 y que proporciona certificados X.509 gratuitos para el cifrado de seguridad de nivel de transporte (TLS) a través de un proceso automatizado diseñado para eliminar el complejo proceso actual de creación manual, la validación, firma, instalación y renovación de los certificados de sitios web seguros. (Fuente: Wikipedia)
 
-#### 1.1.3 Cómo funciona Let’s Encrypt
+### 1.1.3 Cómo funciona Let’s Encrypt
 Se recomienda la lectura de la sección Cómo Funciona Let’s Encrypt de la documentación oficial.
 
 ### 1.1.4 ¿Qué es el protocolo ACME?
@@ -62,7 +62,7 @@ Realizar la instalación y configuración de Docker y Docker Compose en la insta
 ubuntu@ip-172-31-14-3:~/iaw-Pr-ctica-PrestaShop$ sudo docker-compose up
 ~~~~
 
-#### 1.2.6 Paso 6
+### 1.2.6 Paso 6
 Modificar el archivo docker-compose.yml de alguna de las prácticas anteriores para incluir el servicio de HTTPS-PORTAL.
 
 Una vez llegado a este punto, sólo queda desplegar los servicios con Docker Compose y ya tendríamos nuestro sitio web con HTTPS habilidado y todo configurado para que el certificado se vaya renovando automáticamente.
@@ -139,19 +139,17 @@ networks:
 Comenzamos con el asistente de instalación.
 
 
-#### 1.2.8 Paso 7
+### 1.2.8 Paso 8
 Al acabar la instalación entramos en el contenedor docker de prestashop y borramos la carpeta install.
 
 
-### 1.2.8 Paso 8
+### 1.2.9 Paso 9
 Configuramos las siguinetes tablas en mysql desde phpmyadmin. Para esto necesitamos abrir el puerto 8080.
 
-#### 1.2.9 Paso 9
-
+### 1.2.10 Paso 10
 Iniciamos sesión como administrador de prestashop.
 
-#### 1.2.10 Paso 10
-
+### 1.2.11 Paso 11
 Comprobamos la instalación.
 
 
