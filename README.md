@@ -36,6 +36,8 @@ Cuando esté creando la instancia deberá configurar los puertos que estarán ab
 - HTTP (80/TCP)
 - HTTPS (443/TCP)
 
+![](https://raw.githubusercontent.com/joseean29/HTTPS-Docker-Docker-Compose/main/images/puertos.PNG)
+
 
 ### 1.2.2 Paso 2
 Obtener la dirección IP pública de su instancia EC2 en AWS.
@@ -46,6 +48,8 @@ Obtener la dirección IP pública de su instancia EC2 en AWS.
 ### 1.2.3 Paso 3
 Registrar un nombre de dominio en algún proveedor de nombres de dominio gratuito. Por ejemplo, puede hacer uso de Freenom.
 
+![](https://raw.githubusercontent.com/joseean29/HTTPS-Docker-Docker-Compose/main/images/misdominios.PNG)
+
 ### 1.2.4 Paso 4
 Configurar los registros DNS del proveedor de nombres de dominio para que el nombre de dominio de ha registrado pueda resolver hacia la dirección IP pública de su instancia EC2 de AWS.
 
@@ -53,9 +57,11 @@ Si utiliza el proveedor de nombres de dominio Freenom tendrá que acceder desde 
 
 Tendrá que añadir dos registros DNS de tipo A con la dirección IP pública de su instancia EC2 de AWS. Un registro estará en blanco para que pueda resolver el nombre de dominio sin las www y el otro registro estará con las www.
 
+![](https://raw.githubusercontent.com/joseean29/HTTPS-Docker-Docker-Compose/main/images/dns.PNG)
 
 Nota: Tenga en cuenta que una vez que ha realizado los cambios en el DNS habrá que esperar hasta que los cambios se progaguen. Puede hacer uso de la utilidad dnschecker.org para comprobar el estado de propagación de las DNS.
 
+![](https://raw.githubusercontent.com/joseean29/HTTPS-Docker-Docker-Compose/main/images/dnschecker.PNG)
 
 ### 1.2.5 Paso 5
 Realizar la instalación y configuración de Docker y Docker Compose en la instancia EC2 de AWS.
@@ -139,18 +145,27 @@ networks:
 ### 1.2.7 Paso 7
 Comenzamos con el asistente de instalación.
 
+![](https://raw.githubusercontent.com/joseean29/HTTPS-Docker-Docker-Compose/main/images/prestashop1.PNG)
 
 ### 1.2.8 Paso 8
 Al acabar la instalación entramos en el contenedor docker de prestashop y borramos la carpeta install.
 
+![](https://raw.githubusercontent.com/joseean29/HTTPS-Docker-Docker-Compose/main/images/eliminar-install.PNG)
 
 ### 1.2.9 Paso 9
-Configuramos las siguinetes tablas en mysql desde phpmyadmin. Para esto necesitamos abrir el puerto 8080.
+Configuramos las siguientes tablas en mysql desde phpmyadmin. Para esto necesitamos abrir el puerto 8080.
+
+![](https://raw.githubusercontent.com/joseean29/HTTPS-Docker-Docker-Compose/main/images/phpmyadmin.PNG)
 
 ### 1.2.10 Paso 10
 Iniciamos sesión como administrador de prestashop.
 
+![](https://raw.githubusercontent.com/joseean29/HTTPS-Docker-Docker-Compose/main/images/admin.PNG)
+
 ### 1.2.11 Paso 11
 Comprobamos la instalación.
 
+![](https://raw.githubusercontent.com/joseean29/HTTPS-Docker-Docker-Compose/main/images/prestashop2.PNG)
 
+# ENLACE A MI SITIO
+**[joseean-docker.ml](https://joseean-docker.ml/)**
