@@ -40,6 +40,7 @@ Cuando esté creando la instancia deberá configurar los puertos que estarán ab
 ### 1.2.2 Paso 2
 Obtener la dirección IP pública de su instancia EC2 en AWS.
 ~~~~
+100.25.162.84
 ~~~~
 
 ### 1.2.3 Paso 3
